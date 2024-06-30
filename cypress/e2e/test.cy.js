@@ -1,0 +1,36 @@
+/// <reference types="cypress"/>
+
+describe('e2e testing on iCasei platform', () => {
+    it('sending testimony', () => {
+        cy.visit('https://teste-qa.icasei.com.br')
+        cy.get(':nth-child(2) > .sc-1f0cfd3c-10 > .sc-1f0cfd3c-7')
+            .click()
+        cy.wait(2000)
+        cy.get('[href="/lista-de-casamento#depoimentos"]')
+            .click()
+        cy.wait(1000)
+        cy.get('#more-testimonials-cta > .sc-5188c1bd-0')
+            .click()
+        cy.wait(1000)
+        cy.get('.dGzzOR > .sc-5188c1bd-0')
+            .click()
+        cy.wait(1000)
+        cy.get('[id="avalie"]')
+            .select('5 estrelas')
+        cy.wait(1000)
+        cy.get('[class="sc-70d92809-1 hKNDRM"]')
+            .type('rubenueber@gmail.com')
+        cy.wait(1000)
+        cy.get('[class="sc-a351ce4a-0 bUGjte"]')
+            .type('A iCasei foi a melhor escolha para o momento mais importante da minha vida!')
+        cy.wait(1000)
+        cy.get('[class="sc-822edd55-3 iGDELx"]')
+            .click()
+        cy.wait(1000)
+        cy.get('[class="sc-3d36fcd-7 fQtoml"]')
+            .click()
+        cy.wait(1000)
+        
+        //The End!
+    })
+})
