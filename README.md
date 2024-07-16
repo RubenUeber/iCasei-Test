@@ -1,4 +1,4 @@
-# iCasei
+# frontend test to increase test automation knowledge
 
 Teste end-to-end em Cypress.
 Prerequisitos
