@@ -1,4 +1,4 @@
-# frontend test to increase test automation knowledge
+# Automation test to increase the knowledge
 
 Teste end-to-end em Cypress.
 Prerequisitos
